@@ -227,7 +227,7 @@ p {
   transition: 0.5s;
 }
 .mobile-nav-toggle.bi-x {
-  color: #fff;
+  color: #000;
 }
 
 @media (max-width: 991px) {
@@ -242,18 +242,17 @@ p {
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
-  top: 0;
+  top: 20px;
   right: 0;
-  left: 0;
-  bottom: 0;
-  background: rgba(21, 27, 26, 0.8);
+  left: 100px;
+  bottom: 365px;
   transition: 0.3s;
   z-index: 999;
 }
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 5px;
+  right: 10px;
 }
 .navbar-mobile ul {
   display: block;
@@ -264,6 +263,8 @@ p {
   left: 15px;
   padding: 10px 0;
   background-color: #fff;
+ 
+ 
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -1442,3 +1443,18 @@ box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.40);
   margin-top:-2px;
 }
 
+/* Start: Google Maps Responsive */
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:400px; /*Reduce este valor si el mapa fuera muy alto, por ejemplo 250px, puedes usar porcentajes, 50%*/
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+/* End: Google Maps Responsive */
